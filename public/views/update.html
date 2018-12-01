@@ -1,0 +1,25 @@
+<div class="jumbotron">
+	<h1>Update Task</h1>	
+	<form ng-submit="formSubmit() " class="form">
+        <div class="col-md-4">
+          <div class="form-group">
+            <input type="text" class="form-control" ng-model="taskname" placeholder="TaskName" required=""/>
+          </div> 
+ 
+          <div class="form-group">
+            <input type="text" class="form-control" ng-model="description" placeholder="Description" required=""/>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" ng-model="date" placeholder="Date" required=""/>
+          </div>
+ 
+          <div class="form-group">
+            <button class="btn btn-success" ng-click="clear()">Clear</button>
+            <button type="submit" class="btn btn-success">Update</button>
+            <span class="text-danger" style="color:red">{{ error }}</span>
+          </div>
+ 
+        </div>
+      </form>
+  </div>
